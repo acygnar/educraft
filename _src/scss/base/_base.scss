@@ -1,0 +1,19 @@
+@use "./variables" as *;
+
+body {
+  font-family: $font-base;
+  background: $color-bg;
+  color: $color-text;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.site-branding {
+  font-weight: 700;
+}
+.site-main {
+  padding: 0 0 32px;
+}

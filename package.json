@@ -1,0 +1,22 @@
+{
+  "name": "educraft-boilerplate",
+  "version": "1.0.0",
+  "description": "WordPress boilerplate with SCSS, BrowserSync and atomic design structure.",
+  "private": true,
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "browser-sync": "^3.0.4",
+    "dotenv": "^16.6.1",
+    "gulp": "^5.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-esbuild": "^0.14.1",
+    "gulp-postcss": "^10.0.0",
+    "gulp-sass": "^6.0.1",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.93.2"
+  }
+}

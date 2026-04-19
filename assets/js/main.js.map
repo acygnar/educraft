@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["_src/js/modules/demo.js", "_src/js/main.js"],
+  "sourcesContent": ["export function init() {\n  console.log(\"Educraft boilerplate JS loaded.\");\n}\n", "import { init } from \"./modules/demo\";\n\ndocument.addEventListener(\"DOMContentLoaded\", () => {\n  init();\n});\n"],
+  "mappings": ";;AAAO,WAAS,OAAO;AACrB,YAAQ,IAAI,iCAAiC;AAAA,EAC/C;;;ACAA,WAAS,iBAAiB,oBAAoB,MAAM;AAClD,SAAK;AAAA,EACP,CAAC;",
+  "names": []
+}

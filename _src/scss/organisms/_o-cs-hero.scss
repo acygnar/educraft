@@ -1,0 +1,30 @@
+.o-cs-hero {
+  position: relative;
+  z-index: 1;
+  padding-top: 58px;
+  padding-bottom: 58px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  @media (min-width: 1024px) {
+    padding-top: 116px;
+    padding-bottom: 116px;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+  }
+}
+
+.o-cs-hero > * {
+  position: relative;
+  z-index: 2;
+}

@@ -1,0 +1,29 @@
+.o-cs-content {
+  padding-top: 32px;
+  &__intro {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  &__gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    @media (min-width: 1024px) {
+      flex-direction: row;
+    }
+    &-item {
+      object-fit: cover;
+      border-radius: 8px;
+      max-width: 100%;
+      @media (min-width: 1024px) {
+        width: calc(100% / 3 - 32px / 3);
+      }
+    }
+  }
+}
