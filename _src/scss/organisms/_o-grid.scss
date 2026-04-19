@@ -1,0 +1,22 @@
+.o-grid {
+  &__filter {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  &__results {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    @media (min-width: 1024px) {
+      flex-direction: row;
+    }
+  }
+}
