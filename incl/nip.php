@@ -1,5 +1,22 @@
 <?php
-add_filter('woocommerce_checkout_fields', 'custom_woocommerce_checkout_fields', 999);
+function sv_remove_checkout_add_ons_for_giftboxes()
+{
+
+    $cat_check = false;
+    // check each cart item for our category
+    foreach (WC()->cart->get_cart() as $cart_item_key => $cart_item) {
+
+        $product = $cart_item['data'];
+        if (has_term('b2b', 'product_cat', $product->id)) {
+            $cat_check = true;
+            break;
+        }
+    }
+    if ($cat_check) {
+        add_filter('woocommerce_checkout_fields', 'custom_woocommerce_checkout_fields', 999);
+    }
+}
+add_action('woocommerce_before_checkout_form', 'sv_remove_checkout_add_ons_for_giftboxes');
 
 function custom_woocommerce_checkout_fields($fields)
 {
