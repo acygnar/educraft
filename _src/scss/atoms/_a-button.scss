@@ -12,6 +12,9 @@
   cursor: pointer;
   transition: background-color 0.25s ease;
   width: fit-content;
+  &--clear {
+    padding: 6px;
+  }
 }
 
 .a-button:hover,

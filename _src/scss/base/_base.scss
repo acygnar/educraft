@@ -5,6 +5,7 @@ body {
   background: $color-bg;
   color: $color-text;
   line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -16,4 +17,13 @@ a {
 }
 .site-main {
   padding: 0 0 32px;
+}
+#billing_nip_field:has(.checkout-inline-error-message) {
+  label {
+    color: var(--wc-red);
+  }
+
+  input {
+    border-color: var(--wc-red);
+  }
 }
