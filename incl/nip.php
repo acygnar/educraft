@@ -1,5 +1,5 @@
 <?php
-function sv_remove_checkout_add_ons_for_giftboxes()
+function add_nip_if_b2b()
 {
 
     $cat_check = false;
@@ -16,7 +16,7 @@ function sv_remove_checkout_add_ons_for_giftboxes()
         add_filter('woocommerce_checkout_fields', 'custom_woocommerce_checkout_fields', 999);
     }
 }
-add_action('woocommerce_before_checkout_form', 'sv_remove_checkout_add_ons_for_giftboxes');
+add_action('woocommerce_before_checkout_form', 'add_nip_if_b2b');
 
 function custom_woocommerce_checkout_fields($fields)
 {
